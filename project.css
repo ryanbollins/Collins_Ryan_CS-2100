@@ -1,0 +1,227 @@
+/* set font to arial, use sans-serif fallback, removes margin and padding, and background is light gray */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #22153f;
+}
+
+
+
+/* Centralizes the wrapper div with a flexible width, between 900px and 1280px, with light gray background color and no padding */
+#wrapper { background-color: #f2f2f2;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 900px;
+    max-width: 1280px;
+    padding: 0;
+}
+
+/* header has orange background, white text, specific padding and height, and sets the font to Georgia or Times */
+header {
+    background-color: #082055;
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 128px;
+    padding-left: 105px;		 
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+/*sets link color for header*/
+header a {
+    color: #34FEC1;
+}
+
+table { margin: auto; /*sets table margin*/
+    width: 90%; /*sets width for table so its less*/
+    border-spacing: 0; /*sets table border space*/
+    
+}
+ /* nav has bold text, centered content, larger font size, padding, a light gray background, and sets a width */
+.vertical-table-container{
+    width: 20%; 
+}
+
+ /* nav has bold text, centered content, larger font size, padding, a light gray background, and sets a width */
+nav {     
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    margin-right: 20px; 
+}
+
+.flow {
+    border-collapse: collapse; /* stype of border style that makes it thinner than before */
+    background-color: #EEEEEE; /*changes the table color to grey */
+}
+
+.flow td {
+    border: 1px solid black; /*makes the border of the table solid and black */
+    padding: 10px; /*allows for more space in between the words and the borders. Improves readability. */
+}
+
+.sub-button { background-color: white; /*sets color for sub button*/
+}
+
+.sub-button:hover {background-color: #34FEC1; /*sets color for sub button when hoveered*/
+}
+
+/* positions the logo to the left with specific dimensions and positioning relative to its container */
+.logo {
+    float: left; 
+    width:7%;
+    height: auto;
+    position: relative;
+    left: 80px;  
+    bottom: 70px;   
+}
+
+/* use flexbox to align main content and allows space between items within this section */
+.main { 
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+ /* sets dimensions for icons */
+ .icons {
+    width: 24px;
+    height: 24px;
+}
+
+/* creates a central content container with padding, white background, rounded corners, and a shadow effect */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 25%;
+}
+
+/* sets color of headings to dark gray */
+h1, h2 { color: #333;
+}
+
+/* increases h1 size */
+h1 { font-size: 2em; 
+}
+
+/* adds line-height for better readability in paragraph text */
+p { line-height: 1.6;
+}
+
+/* sets background of footer to orange and smaller, italicized, and centered text*/
+footer {
+    background-color: #082055;
+    color: #34FEC1;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 1em;
+    border-top: 2px;
+}
+/*sets link color for footer*/
+footer a {
+    color: #34FEC1;
+}
+/* site images are displayed as block elements */
+.sitePic{ display: block;
+}
+
+/* limits max width of images in book recommendation section */
+.book_rec {max-width: 100px;
+}
+  
+/* limits max width of images in book recommendation section */
+.book_recf {max-width: 300px;
+}
+
+/* limits the size of profile pictures */
+.profilepic{max-width: 25px;
+}
+
+/* makes certain elements visible only on mobile devices */
+#mobile { display: inline; 
+}
+
+/* hides certain elements on mobile devices, typically for desktop-specific styling */
+#desktop { display: none; 
+}
+
+/* edits style of website for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+
+        /* remove any left padding */
+header { 	padding-left: 0; 
+        text-align: center; 
+    }
+
+    /*icnrease font size*/
+h1  { font-size: 3em; 
+    }	
+
+        /*display elements in a row for container*/
+#flow { display: flex;
+        flex-direction: row; 
+    }  
+    
+/*hide mobile element on small screens*/
+#mobile   { display: none;
+    }
+
+/*show desktop element on small screens*/
+#desktop { display: inline; 
+    }
+
+    /*set the form width to 40% and use a grid layout for its elements*/
+form { width: 40%;
+      display: grid; 
+      grid-gap: 1em; gap: 1em; 
+      grid-template-columns: 6em 1fr; 
+        }	
+                     
+    /*make the table, thead, tbody, th, td, tr block-level elements which allows stacking for small screens*/
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    /* hide table headers */
+    thead tr {
+        display: none;
+    }
+
+    /* makes tables seperate blocks */
+    tr {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+    }
+
+    /* each cell is made like a row */
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    /* adds labels to each cell for mobile */
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+
+@media (min-width: 600px) { 
+    #flow { display: flex;
+        flex-direction: row; 
+    }    
+}
