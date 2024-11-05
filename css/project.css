@@ -1,227 +1,192 @@
-/* set font to arial, use sans-serif fallback, removes margin and padding, and background is light gray */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #22153f;
-}
+* { box-sizing: border-box; }
+body { background-color: #311c47;
+	   background-repeat: no-repeat;
+	   background-size: cover;
+	   background-attachment: fixed;
+       color: #000000;
+	   font-family: Tahoma, Arial, sans-serif; }
 
+#wrapper { background-color: #080e1d;
+           margin-left: auto;
+           margin-right: auto;
+           width: 80%;
+		   min-width: 900px;
+		   max-width: 1280px;
+		   box-shadow: 3px 3px 3px #34FEC1;
+		   padding: 0; }   
 
+header { background-color: #112247; 
+		 background-repeat: no-repeat;
+         padding-left: 240px;		 
+		 padding-top: 5px;
+		 padding-bottom: 5px; }
 
-/* Centralizes the wrapper div with a flexible width, between 900px and 1280px, with light gray background color and no padding */
-#wrapper { background-color: #f2f2f2;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    min-width: 900px;
-    max-width: 1280px;
-    padding: 0;
-}
+header a { text-decoration: none; }
 
-/* header has orange background, white text, specific padding and height, and sets the font to Georgia or Times */
-header {
-    background-color: #082055;
-    padding: 20px;
+header a:link { color: #34FEC1; }
+
+header a:visited { color: #02CA8E; }
+
+header a:hover { color: #d0b6f3; }
+
+h1 {padding-left: 20px;; 
+    font-size: 3em; }
+
+h1, h2, h3, dt { color: #B586F4; }
+
+p {color: white;}
+
+a:link       { color: #34FEC1; }
+
+a:visited { color: #02b881; }
+
+a:hover     { color: #d0b6f3; }
+
+nav { float: left;
+      font-weight: bold; 
+	  text-align: center;
+	  font-size: 1.5em;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  width: 200px; }
+nav a { text-decoration: none; }
+
+nav a:link { color: #34FEC1; }
+
+nav a:visited { color: #02CA8E; }
+
+nav a:hover { color: #d0b6f3; }
+
+nav ul { list-style-type: none; 
+       padding-left: 0; }
+
+main { background-color: #0F0F0F;
+       display: block;
+	   margin-left: 200px;
+	   overflow: auto;
+       padding: 0 0 2em 0; 
+       box-shadow: 0px 0px 10px #d0b6f3; }
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;}
+  
+.gallery {
+    background-color: #242424;
+    width: 250px;
+    margin: 0 1em;
+    padding: 1em;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 128px;
-    padding-left: 105px;		 
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-/*sets link color for header*/
-header a {
-    color: #34FEC1;
-}
+    box-shadow: 0px 0px 10px #34FEC1;
+    border-radius: 5px;
+    flex-shrink: 0;
+    float: left; }
 
-table { margin: auto; /*sets table margin*/
-    width: 90%; /*sets width for table so its less*/
-    border-spacing: 0; /*sets table border space*/
-    
-}
- /* nav has bold text, centered content, larger font size, padding, a light gray background, and sets a width */
-.vertical-table-container{
-    width: 20%; 
-}
+.thumbnail { 
+    width: 100px; 
+    cursor: pointer;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: 0.3s; }
 
- /* nav has bold text, centered content, larger font size, padding, a light gray background, and sets a width */
-nav {     
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 200px;
-    margin-right: 20px; 
-}
+.thumbnail:hover {transform: scale(1.05);}
+
+.title {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #D9BEF9;}
+
+.details { padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+    margin-top: 10px;}
+
+details summary {
+    list-style: none;
+    width: 100%; }
+
+
+.bookSum {
+    padding-left: 1em; 
+    width: 100px; 
+    background-color: #D9BEF9;
+    border: 1px solid #02b881;
+    padding: 2px;
+    cursor: pointer; }
+
+.bookSum:hover { background-color: #9dfade; }
+
+#bookP {
+    font-size: small;
+    width: 50%; 
+    background-color: black;
+    border: 1px solid #02b881;
+    color: white;
+    padding: 2px;
+    cursor: pointer; }
+
+.followingMore {
+    padding-left: 200px; 
+    width: 100px; 
+    background-color: #D9BEF9;
+    border: 1px solid #02b881;
+    padding: 2px;
+    cursor: pointer; }
+
+.followingMore:hover {
+    background-color: #9dfade; }
 
 .flow {
-    border-collapse: collapse; /* stype of border style that makes it thinner than before */
-    background-color: #EEEEEE; /*changes the table color to grey */
-}
+    border-collapse: collapse; 
+    background-color: #363636;
+    color: #D9BEF9; }
 
 .flow td {
-    border: 1px solid black; /*makes the border of the table solid and black */
-    padding: 10px; /*allows for more space in between the words and the borders. Improves readability. */
-}
+    border: 1px solid #02b881;
+    padding: 10px; }
 
-.sub-button { background-color: white; /*sets color for sub button*/
-}
+.publish {
+    background-color: #311c47;
+    color: #34FEC1; }
 
-.sub-button:hover {background-color: #34FEC1; /*sets color for sub button when hoveered*/
-}
+.publish:hover {
+    background-color: #34FEC1;
+    color: #311c47; }
 
-/* positions the logo to the left with specific dimensions and positioning relative to its container */
-.logo {
-    float: left; 
-    width:7%;
-    height: auto;
-    position: relative;
-    left: 80px;  
-    bottom: 70px;   
-}
+h2, h3, p, div, ul, dl { padding-left: 3em; 
+                         padding-right: 2em; }
 
-/* use flexbox to align main content and allows space between items within this section */
-.main { 
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
+.floatleft {float: left; 
+            padding-right: 2em;
+			padding-bottom: 2em; }
 
+.onethird { float: left; 
+            width: 33%; }
+img {padding-left: 10px;
+    padding-right: 10px;
+    color:#D9BEF9; }
 
- /* sets dimensions for icons */
- .icons {
-    width: 24px;
-    height: 24px;
-}
+    .profilepic { width: 15%; }
 
-/* creates a central content container with padding, white background, rounded corners, and a shadow effect */
-.container {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-right: 25%;
-}
+.followingPic { width: 15%; }
 
-/* sets color of headings to dark gray */
-h1, h2 { color: #333;
-}
+.followingPicSm{ width: 10%; }
 
-/* increases h1 size */
-h1 { font-size: 2em; 
-}
+footer { background-color: #082055;
+        font-size: .60em;
+		font-style: italic;
+		text-align: center;
+		padding-bottom: 1em;
+		border-top: 2px solid #34FEC1;
+        color: #34FEC1; }
 
-/* adds line-height for better readability in paragraph text */
-p { line-height: 1.6;
-}
+#sitemap { width: 750px; }
 
-/* sets background of footer to orange and smaller, italicized, and centered text*/
-footer {
-    background-color: #082055;
-    color: #34FEC1;
-    font-size: .60em;
-    font-style: italic;
-    text-align: center;
-    padding-bottom: 1em;
-    border-top: 2px;
-}
-/*sets link color for footer*/
-footer a {
-    color: #34FEC1;
-}
-/* site images are displayed as block elements */
-.sitePic{ display: block;
-}
-
-/* limits max width of images in book recommendation section */
-.book_rec {max-width: 100px;
-}
-  
-/* limits max width of images in book recommendation section */
-.book_recf {max-width: 300px;
-}
-
-/* limits the size of profile pictures */
-.profilepic{max-width: 25px;
-}
-
-/* makes certain elements visible only on mobile devices */
-#mobile { display: inline; 
-}
-
-/* hides certain elements on mobile devices, typically for desktop-specific styling */
-#desktop { display: none; 
-}
-
-/* edits style of website for screens with a maximum width of 600px */
-@media (max-width: 600px) {
-
-        /* remove any left padding */
-header { 	padding-left: 0; 
-        text-align: center; 
-    }
-
-    /*icnrease font size*/
-h1  { font-size: 3em; 
-    }	
-
-        /*display elements in a row for container*/
-#flow { display: flex;
-        flex-direction: row; 
-    }  
-    
-/*hide mobile element on small screens*/
-#mobile   { display: none;
-    }
-
-/*show desktop element on small screens*/
-#desktop { display: inline; 
-    }
-
-    /*set the form width to 40% and use a grid layout for its elements*/
-form { width: 40%;
-      display: grid; 
-      grid-gap: 1em; gap: 1em; 
-      grid-template-columns: 6em 1fr; 
-        }	
-                     
-    /*make the table, thead, tbody, th, td, tr block-level elements which allows stacking for small screens*/
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-    
-    /* hide table headers */
-    thead tr {
-        display: none;
-    }
-
-    /* makes tables seperate blocks */
-    tr {
-        margin-bottom: 10px;
-        border-bottom: 2px solid #ddd;
-    }
-
-    /* each cell is made like a row */
-    td {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 50%;
-        position: relative;
-    }
-
-    /* adds labels to each cell for mobile */
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-}
-
-
-@media (min-width: 600px) { 
-    #flow { display: flex;
-        flex-direction: row; 
-    }    
-}
+footer a { font-size: .60em;
+        font-style: italic;
+        text-align: center;
+        padding-bottom: 1em;
+        color: #34FEC1; }

@@ -1,93 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href = "css/project.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookSmart-Your Reviews</title>
+<title>BookSmart-Reviews</title>
+<meta charset="utf-8">
+<link href="css/project.css" rel="stylesheet">
 </head>
 <body>
 <div id="wrapper">
-    <header>
-        <h1><a href="index.html">BookSmart</a></h1>
-        <img src="images/logo.jpg" alt="Logo picture of books" class="logo">
-    </header>
-    <div class="main">
-          <div class="vertical-table-container">
-            <nav>
-            <table> 
-                <tr>
-                    <td><img src="images/house.jpg" alt="House Icon" class="icons">
-                        <a href="index.html">Home</a></td>
+  <header>
+     <h1><a href="index.html">BookSmart</a></h1>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yourStuff.html">Your Stuff</a></li> 
+        <li><a href="forYou.html">For You</a></li>
+        <li><a href="newtrending.html">New/Trending</a></li>
+        <li><a href="profile.html">Profile</a></li>
+	</ul>
+  </nav>
+  <main>
+   
+               
+        <h1>Reviews</h2>
+        
+            <form method="post" action="https://webdevbasics.net/scripts/demo.php" >
+                <table class="flow">
+                    <tr>
+                    <td> <label for="bookName">Name: </label>
+                        <input type="text" class="bookName" name="bookName" required></td>
+                    <td> <label for="bookAuthor">Author: </label>
+                        <input type="text" class="bookAuthor" name="bookAuthor" required></td>
+                    <td> <label for="review">Review: </label>
+                        <input type="text" class="review" name="review" required></td>
+                    <td> <button class="publish">Publish</button></td>
                 </tr>
+               </table>
+               </form>
+            <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <table class="flow">
                 <tr>
-                    <td><img src= "images/glass.jpg" alt="Glass Icon" class="icons">
-                        <a href="stuff.html">Your Stuff</a></td>
-                </tr>
-                <tr>
-                    <td><img src= "images/4u.jpg" alt="For You Icon" class="icons">
-                        <a href="4u.html">For You</a></td>
-                </tr>
-                <tr>
-                    <td><img src= "images/newtrending.jpg" alt="New trending icon" class="icons">
-                        <a href="newtrending.html">New/Trending</a></td>
-                </tr>
-                <tr>
-                    <td><img src= "images/profile.jpg" alt="Profile Icon" class="icons">
-                        <a href="profile.html">Profile</a></td>
-                </tr>
+                    <td> <label for="bookName">Name: </label>
+                        <input type="text" class="bookName" name="bookName" required></td>
+                    <td> <label for="bookAuthor">Author: </label>
+                        <input type="text" class="bookAuthor" name="bookAuthor" required></td>
+                    <td> <label for="review">Review: </label>
+                        <input type="text" class="review" name="review" required></td>
+                    <td> <button  class="publish">Publish</button></td>
+                    </tr>
             </table>
-        </nav>
-        </div>
-    <div class="container">
-        <div class="profile">
-            <h2>Reviews</h2>
-        </div>
-        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
-            <table class="flow">
+        </form>
+            <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <table class="flow">
                 <tr>
-                <td> <label for="bookName">Name: </label>
-                    <input type="text" id="bookName" name="bookName" required></td>
-                <td> <label for="bookAuthor">Author: </label>
-                    <input type="text" id="bookAuthor" name="bookAuthor" required></td>
-                <td> <label for="review">Review: </label>
-                    <input type="text" id="review" name="review" required></td>
-                    <td>  <input type="submit" value="Publish" class="sub-button"></td>
-            </tr>
-           </table>
-           </form>
-      
-        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
-            <table class="flow">
-            <tr>
-                <td> <label for="bookName">Name: </label>
-                    <input type="text" id="bookName2" name="bookName" required></td>
-                <td> <label for="bookAuthor">Author: </label>
-                    <input type="text" id="bookAuthor2" name="bookAuthor" required></td>
-                <td> <label for="review">Review: </label>
-                    <input type="text" id="review2" name="review" required></td>
-                    <td>  <input type="submit" value="Publish" class="sub-button"></td>
-            </tr>
-        </table>
-    </form>
-        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
-            <table class="flow">
-            <tr>
-                <td> <label for="bookName">Name: </label>
-                    <input type="text" id="bookName3" name="bookName" required></td>
-                <td> <label for="bookAuthor">Author: </label>
-                    <input type="text" id="bookAuthor3" name="bookAuthor" required></td>
-                <td> <label for="review">Review: </label>
-                    <input type="text" id="review3" name="review" required></td>
-                    <td>  <input type="submit" value="Publish" class="sub-button"></td>
-        </table>
-    </form>
+                    <td> <label for="bookName">Name: </label>
+                        <input type="text" class="bookName" name="bookName" required></td>
+                    <td> <label for="bookAuthor">Author: </label>
+                        <input type="text" class="bookAuthor" name="bookAuthor" required></td>
+                    <td> <label for="review">Review: </label>
+                        <input type="text" class="review" name="review" required></td>
+                    <td> <button class="publish">Publish</button></td>
+                    </tr>
+            </table>
+        </form>
+  </main>
+  <footer>
+    <a href="sitemap.html">sitemap </a> <br>     
+    <a href="privacy.html">Privacy Policy </a> <br>     
+    © 2024 Ryan C Company  
+  </footer>
 </div>
-</div>
-    <br>
-    <footer>
-        <a href="sitemap.html">sitemap </a> <br>     <a href="privacy.html">Privacy Policy </a> <br>     © 2024 Ryan C Company    
-    </footer>
-</div>
+<audio id="error" src="media/error.mp3"></audio>
+<script src="project.js"></script>
 </body>
 </html>

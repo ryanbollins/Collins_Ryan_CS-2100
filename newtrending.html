@@ -1,69 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href = "css/project.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookSmart-New/Trending</title>
+<title>BookSmart-New/Trending</title>
+<meta charset="utf-8">
+<link href="css/project.css" rel="stylesheet">
 </head>
 <body>
 <div id="wrapper">
-    <header>
-        <h1><a href="index.html">BookSmart</a></h1>
-        <img src="images/logo.jpg" alt="Logo picture of books" class="logo">
-    </header>
-    <div class="main">
-          <div class="vertical-table-container">
-            <nav>
-            <table> 
-                <tr>
-                    <td><img src="images/house.jpg" alt="House Icon" class="icons">
-                        <a href="index.html">Home</a></td>
-                </tr>
-                <tr>
-                    <td><img src= "images/glass.jpg" alt="Glass Icon" class="icons">
-                        <a href="stuff.html">Your Stuff</a></td>
-                </tr>
-                <tr>
-                    <td><img src= "images/4u.jpg" alt="For You Icon" class="icons">
-                        <a href="4u.html">For You</a></td>
-                </tr>
-                <tr>
-                    <td><img src= "images/newtrending.jpg" alt="New trending icon" class="icons">
-                        <a href="newtrending.html">New/Trending</a></td>
-                </tr>
-                <tr>
-                    <td><img src= "images/profile.jpg" alt="Profile Icon" class="icons">
-                        <a href="profile.html">Profile</a></td>
-                </tr>
-            </table>
-        </nav>
-        </div>
-    <div class="container">
-        <div class="profile">
-        <h1>Your Stuff</h1>
-            <h2><a href="new.html">New</a></h2>
-           
-        </div>
-        <img src= "images/fantasy.jpg" alt="picture of fantasy" class="book_rec"> <h3><a href="fantasy_book.html">Fantasy Book</a>: By Author</h3> 
-        <br> <img src="images/horror.jpg" alt="picture of horror book" class="book_rec"><h3><a href="horror_book.html">Horror Book</a>: By Author</h3> 
-        <br> <img src="images/political.jpg" alt="picture of political book" class="book_rec"><h3><a href="political_book.html">Political Book</a>: By Author</h3>
+  <header>
+     <h1><a href="index.html">BookSmart</a></h1>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yourStuff.html">Your Stuff</a></li> 
+        <li><a href="forYou.html">For You</a></li>
+        <li><a href="newtrending.html">New/Trending</a></li>
+        <li><a href="profile.html">Profile</a></li>
+	</ul>
+  </nav>
+  <main>
+    <h1>New/Trending</h1>
+    <h2><a href="new.html">New</a></h2>
+            <div class="gallery-container">
+            <div class="gallery">
+                <a href="political_book.html">
+                    <img src="media/political.jpg" alt="picture of political book" class="thumbnail">
+                </a>
+                <div class="title"><a href="political_book.html">Political Book</a>: By Author</h2></div>
+                    <details> 
+                        <summary class = "bookSum"> Description </summary>
+                        <p id = "bookP">
+                            This is where Political Book Summary would go
+                        </p>
+                    </details>
+            </div>
+            <div class="gallery">
+                <a href ="fantasy_book.html" >
+                    <img src="media/fantasy.jpg" alt="picture of fantasy book" class="thumbnail"> </a>  
+                <div class="title"><a href="fantasy_book.html">Fantasy Book</a>: By Author </div>
+                    <details> 
+                        <summary class = "bookSum"> Description </summary>
+                             <p id = "bookP">
+                                 This is where Fantasy Book Summary would go
+                             </p>
+                    </details>
+                </div>
+                <div class="gallery">
+                <a href="horror_book.html">
+                    <img src="media/horror.jpg" alt="picture of book" class="thumbnail"></a>
+                    <div class="title"><a href="horror_book.html">Horror Book</a>: By Author </div>
+                <details> 
+                    <summary class = "bookSum"> Description </summary>
+                         <p id = "bookP">
+                             This is where Horror Book Summary would go
+                         </p>
+                 </details>
+                </div>
+                </div>
+    <h2><a href="Trending.html">Trending</a></h2>
+                <div class="gallery-container">
+                <div class="gallery">
+                    <a href="political_book.html">
+                        <img src="media/political.jpg" alt="picture of political book" class="thumbnail">
+                    </a>
+                    <div class="title"><a href="political_book.html">Political Book</a>: By Author</h2></div>
+                        <details> 
+                            <summary class = "bookSum"> Description </summary>
+                            <p id = "bookP">
+                                This is where Political Book Summary would go
+                            </p>
+                        </details>
+                </div>
+                <div class="gallery">
+                    <a href ="fantasy_book.html" >
+                        <img src="media/fantasy.jpg" alt="picture of fantasy book" class="thumbnail"> </a>  
+                    <div class="title"><a href="fantasy_book.html">Fantasy Book</a>: By Author </div>
+                        <details> 
+                            <summary class = "bookSum"> Description </summary>
+                                 <p id = "bookP">
+                                     This is where Fantasy Book Summary would go
+                                 </p>
+                        </details>
+                    </div>
+                    <div class="gallery">
+                    <a href="horror_book.html">
+                        <img src="media/horror.jpg" alt="picture of book" class="thumbnail"></a>
+                        <div class="title"><a href="horror_book.html">Horror Book</a>: By Author </div>
+                    <details> 
+                        <summary class = "bookSum"> Description </summary>
+                             <p id = "bookP">
+                                 This is where Horror Book Summary would go
+                             </p>
+                     </details>
+                    </div>
+                    </div>
+               
+      
 
-        <h2><a href="trending.html">Trending</a></h2>
-        
-        <img src= "images/fantasy.jpg" alt="picture of fantasy" class="book_rec"> <h3><a href="fantasy_book.html">Fantasy Book</a>: By Author</h3> 
-        <p>This is where the review would go. Will try to implement way to write your own stuff.</p>
-        <br> <img src="images/horror.jpg" alt="picture of horror book" class="book_rec"><h3><a href="horror_book.html">Horror Book</a>: By Author</h3> 
-        <p>This is where the review would go. Will try to implement way to write your own stuff.</p>
-        <br> <img src="images/political.jpg" alt="picture of political book" class="book_rec"><h3><a href="political_book.html">Political Book</a>: By Author</h3>
-        <p>This is where the review would go. Will try to implement way to write your own stuff.</p>
-
-    </div>
+  </main>
+  <footer>
+    <a href="sitemap.html">sitemap </a> <br>     
+    <a href="privacy.html">Privacy Policy </a> <br>     
+    © 2024 Ryan C Company  
+  </footer>
 </div>
-    <br>
-    <footer>
-        <a href="sitemap.html">sitemap </a> <br>     <a href="privacy.html">Privacy Policy </a> <br>     © 2024 Ryan C Company    
-    </footer>
-</div>
+<audio id="turn" src="media/pageTurn.mp3"></audio>
+<script src="project.js"></script>
 </body>
 </html>
