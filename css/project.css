@@ -146,7 +146,7 @@ details summary {
 .bookSum:hover { background-color: #9dfade; }
 
 /* Style for book paragraph content - set background, border, color, and cursor */
-#bookP {
+.bookP {
     font-size: small;
     width: 50%; 
     background-color: black;
