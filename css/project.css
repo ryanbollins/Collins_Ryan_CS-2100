@@ -7,7 +7,7 @@ body { background-color: #311c47;
 	   background-repeat: no-repeat;
 	   background-size: cover;
 	   background-attachment: fixed;
-       color: #34FEC1;
+       
 	   font-family: Tahoma, Arial, sans-serif; }
 /* Wrapper container styles - center content, set width limits, background color, and shadow */
 #wrapper { background-color: #080e1d;
@@ -17,7 +17,12 @@ body { background-color: #311c47;
 		   min-width: 900px;
 		   max-width: 1280px;
 		   box-shadow: 3px 3px 3px #34FEC1;
-		   padding: 0; }   
+		   padding: 0; }  
+
+    /*changes text color of the products page*/
+#productStuff {
+        color:#34FEC1;
+    } 
 
 /* Header style - set background color, no-repeat background, padding around header content */
 header { background-color: #112247; 
