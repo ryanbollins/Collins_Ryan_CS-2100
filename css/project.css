@@ -1,105 +1,151 @@
 /* Apply box-sizing to all elements to include padding and border in element’s total width and height */
-* { box-sizing: border-box; }
+* { 
+    box-sizing: border-box; 
+}
 
 /* Style for body - set background color, prevent background repeat, cover entire background, 
    fix background on scroll, set font color, and specify font family */
-body { background-color: #311c47;
-	   background-repeat: no-repeat;
-	   background-size: cover;
-	   background-attachment: fixed;
-       
-	   font-family: Tahoma, Arial, sans-serif; }
+body { 
+    background-color: #311c47;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: Tahoma, Arial, sans-serif; 
+}
+
 /* Wrapper container styles - center content, set width limits, background color, and shadow */
-#wrapper { background-color: #080e1d;
-           margin-left: auto;
-           margin-right: auto;
-           width: 80%;
-		   min-width: 900px;
-		   max-width: 1280px;
-		   box-shadow: 3px 3px 3px #34FEC1;
-		   padding: 0; }  
+#wrapper { 
+    background-color: #080e1d;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+	min-width: 900px;
+	max-width: 1280px;
+	box-shadow: 3px 3px 3px #34FEC1;
+	padding: 0; 
+}  
 
     /*changes text color of the products page*/
-#productStuff {
-        color:#34FEC1;
-    } 
+#productStuff { 
+    color:#34FEC1; 
+} 
 
 /* Header style - set background color, no-repeat background, padding around header content */
-header { background-color: #112247; 
-		 background-repeat: no-repeat;
-         padding-left: 240px;		 
-		 padding-top: 5px;
-		 padding-bottom: 5px; }
+header { 
+    background-color: #112247; 
+	background-repeat: no-repeat;
+    padding-left: 240px;		 
+	padding-top: 5px;
+	padding-bottom: 5px; 
+}
 
 /* Remove underline from links within header */
-header a { text-decoration: none; }
+header a { 
+    text-decoration: none; 
+}
 
 /* Style for unvisited header links */
-header a:link { color: #34FEC1; }
+header a:link { 
+    color: #34FEC1; 
+}
 
 /* Style for visited header links */
-header a:visited { color: #02CA8E; }
+header a:visited { 
+    color: #02CA8E; 
+}
 
 /* Style for hovered header links */
-header a:hover { color: #d0b6f3; }
+header a:hover { 
+    color: #d0b6f3;
+}
 
 /* Heading 1 style - add padding and font size */
-h1 {padding-left: 20px;; 
-    font-size: 3em; }
+h1 {
+    padding-left: 20px;; 
+    font-size: 3em; 
+}
 
 /* Color for various header and title elements */
-h1, h2, h3, dt { color: #B586F4; }
+h1, h2, h3, dt { 
+    color: #B586F4; 
+}
 
 /* Paragraph text color */
-p {color: white;}
+p { 
+    color: white;
+}
 
 /* General link styles */
-a:link       { color: #34FEC1; }
-a:visited { color: #02b881; }
-a:hover     { color: #d0b6f3; }
+a:link { 
+    color: #34FEC1; 
+}
+
+a:visited { 
+    color: #02b881; 
+}
+
+a:hover { 
+    color: #d0b6f3; 
+}
 
 /* Navigation styling - float left, center text, padding, width, and font settings */
-nav { float: left;
-      font-weight: bold; 
-	  text-align: center;
-	  font-size: 1.5em;
-	  padding-top: 5px;
-	  padding-bottom: 5px;
-	  width: 200px; }
+nav { 
+    float: left;
+    font-weight: bold; 
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 200px; 
+}
 
 /* Remove underline from links in navigation */
-nav a { text-decoration: none; }
+nav a { 
+    text-decoration: none; 
+}
 
 /* Style for unvisited navigation links */
-nav a:link { color: #34FEC1; }
+nav a:link { 
+    color: #34FEC1; 
+}
 
 /* Style for visited navigation links */
-nav a:visited { color: #02CA8E; }
+nav a:visited { 
+    color: #02CA8E; 
+}
 
 /* Style for hovered navigation links */
-nav a:hover { color: #d0b6f3; }
+nav a:hover { 
+    color: #d0b6f3; 
+}
 
 /* Remove bullets and padding from unordered lists in navigation */
-nav ul { list-style-type: none; 
-       padding-left: 0; }
+nav ul { 
+    list-style-type: none; 
+    padding-left: 0;
+}
 
 /* Main content area styling - set background color, position, shadow, and padding */
-main { background-color: #0F0F0F;
-       display: block;
-	   margin-left: 200px;
-	   overflow: auto;
-       padding: 0 0 2em 0; 
-       box-shadow: 0px 0px 10px #d0b6f3; }
+main { 
+    background-color: #0F0F0F;
+    display: block;
+	margin-left: 200px;
+	overflow: auto;
+    padding: 0 0 2em 0; 
+    box-shadow: 0px 0px 10px #d0b6f3;
+    min-height: 1000px; 
+}
 
 /* Gallery container styles - use grid display, set column count and spacing, and add padding */
-.gallery-container {
+.gallery-container { 
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px; 
-    padding: 20px;}
+    padding: 20px; 
+}
 
 /* Gallery item styles - set background, width, margins, padding, shadow, and rounded corners */
-.gallery {
+.gallery { 
     background-color: #242424;
     width: 250px;
     margin: 0 1em;
@@ -108,7 +154,8 @@ main { background-color: #0F0F0F;
     box-shadow: 0px 0px 10px #34FEC1;
     border-radius: 5px;
     flex-shrink: 0;
-    float: left; }
+    float: left; 
+}
 
 /* Thumbnail styles - set size, border, rounded corners, and add transition for hover effect */
 .thumbnail { 
@@ -120,123 +167,252 @@ main { background-color: #0F0F0F;
     transition: 0.3s; }
 
 /* Scale effect for thumbnail on hover */
-.thumbnail:hover {transform: scale(1.05);}
+.thumbnail:hover {
+    transform: scale(1.05);
+}
 
 /* Title styling within gallery items */
-.title {
+.title { 
     margin: 10px 0;
     font-weight: bold;
-    color: #D9BEF9;}
+    color: #D9BEF9;
+}
 /* Details section style - set padding, margin, and overflow handling */
-.details { padding-left: 20%;
+.details { 
+    padding-left: 20%;
     padding-right: 20%;
     overflow: auto;
-    margin-top: 10px;}
+    margin-top: 10px; 
+}
 
 /* Summary styling within details */
-details summary {
+details summary { 
     list-style: none;
     width: 100%; }
 
 /* Button for book summary - set padding, background, border, cursor, and hover effects */
-.bookSum {
+.bookSum { 
     padding-left: 1em; 
     width: 100px; 
     background-color: #D9BEF9;
     border: 1px solid #02b881;
     padding: 2px;
-    cursor: pointer; }
+    cursor: pointer; 
+}
 
 /* Hover effect for book summary button */
-.bookSum:hover { background-color: #9dfade; }
+.bookSum:hover { 
+    background-color: #9dfade; }
 
 /* Style for book paragraph content - set background, border, color, and cursor */
-.bookP {
+.bookP { 
     font-size: small;
     width: 50%; 
     background-color: black;
     border: 1px solid #02b881;
     color: white;
     padding: 2px;
-    cursor: pointer; }
+    cursor: pointer; 
+}
 
 /* Style for following-more button */
-.followingMore {
+.followingMore { 
     padding-left: 200px; 
     width: 100px; 
     background-color: #D9BEF9;
     border: 1px solid #02b881;
     padding: 2px;
-    cursor: pointer; }
+    cursor: pointer; 
+}
 
 /* Hover effect for following-more button */
-.followingMore:hover {
-    background-color: #9dfade; }
+.followingMore:hover { 
+    background-color: #9dfade;
+}
 
 /* Table styling for flow class - collapse borders, set background color and text color */
-.flow {
+.flow { 
     border-collapse: collapse; 
     background-color: #363636;
-    color: #D9BEF9; }
+    color: #D9BEF9; 
+}
 
 /* Style for table cells in flow - set border and padding */
-.flow td {
+.flow td { 
     border: 1px solid #02b881;
-    padding: 10px; }
+    padding: 10px; 
+}
 
 /* Publish button style - set background and font color */
-.publish {
+.publish { 
     background-color: #311c47;
-    color: #34FEC1; }
+    color: #34FEC1; 
+}
 
 /* Hover effect for publish button */
-.publish:hover {
+.publish:hover { 
     background-color: #34FEC1;
-    color: #311c47; }
+    color: #311c47; 
+}
 
 /* General padding for various elements */
-h2, h3, p, div, ul, dl { padding-left: 3em; 
-                         padding-right: 2em; }
+h2, h3, p, div, ul, dl { 
+    padding-left: 3em; 
+    padding-right: 2em; 
+}
 
 /* Float left styling with padding */
-.floatleft {float: left; 
-            padding-right: 2em;
-			padding-bottom: 2em; }
+.floatleft {
+    float: left; 
+    padding-right: 2em;
+	padding-bottom: 2em; }
 
 /* Styling for one-third width elements */
-.onethird { float: left; 
-            width: 33%; }
+.onethird { 
+    float: left; 
+    width: 33%; 
+}
 
 /* Image padding and color */
-img {padding-left: 10px;
+img {
+    padding-left: 10px;
     padding-right: 10px;
-    color:#D9BEF9; }
+    color:#D9BEF9; 
+}
 
 /* Profile picture styling */
-.profilepic { width: 15%; }
+.profilepic { 
+    width: 15%; 
+}
 
 /* Following picture styling */
-.followingPic { width: 15%; }
+.followingPic { 
+    width: 15%;
+}
 
 
 /* Smaller following picture styling */
-.followingPicSm{ width: 10%; }
+.followingPicSm{ 
+    width: 10%; 
+}
 
 /* Footer styling - set background, font size, style, alignment, padding, border, and color */
-footer { background-color: #082055;
-        font-size: .60em;
-		font-style: italic;
-		text-align: center;
-		padding-bottom: 1em;
-		border-top: 2px solid #34FEC1;
-        color: #34FEC1; }
+footer { 
+    background-color: #082055;
+    font-size: .60em;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 1em;
+	border-top: 2px solid #34FEC1;
+    color: #34FEC1; }
 
 /* Sitemap section width within footer */
-#sitemap { width: 750px; }
+#sitemap { 
+    width: 750px; 
+}
+
 
 /* Footer link styling */
-footer a { font-size: .60em;
-        font-style: italic;
+footer a { 
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #34FEC1; 
+}
+
+
+
+/*adjusting website for mobile users*/
+@media all and (max-width: 828px) {
+
+    /* Adjust wrapper width to fit smaller screens */
+    #wrapper {
+        width: 90%;
+        min-width: auto;
+        max-width: 100%;
+        padding: 0 10px; 
+    }
+
+
+    /* Stack navigation and main content vertically */
+    nav { 
+        float: none;
+        width: 100%;
         text-align: center;
-        padding-bottom: 1em;
-        color: #34FEC1; }
+        padding: 10px 0;
+        font-size: 1.2em; 
+    }
+    
+    /*removes box shadow for mobile users*/
+    main {
+        margin-left: 0;
+        padding: 10px;
+        min-height: auto;
+        box-shadow: none; 
+    }
+        
+    /* Adjust gallery item size and alignment */
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 10px; 
+    }
+    /*adds padding of gallery for mobile users*/
+    .gallery {
+        width: 100%;
+        margin: 0;
+        padding: 10px; 
+    }
+        
+    /* Resize thumbnails for smaller screens */
+    .thumbnail {
+        width: 80px; 
+    }
+        
+    /* Resize titles and headings */
+    h1 {    
+        font-size: 2em;
+        padding-left: 10px; 
+    }
+
+    /*adjusting size of h2 and h3 for mobile*/
+    h2, h3 {
+        font-size: 1.5em;
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
+        
+    /* Adjust details and book sections */
+    .details {
+        padding: 10px;
+        margin-top: 10px; 
+    }
+
+    /*adjusting size of book images for mobile users*/
+    .bookP {
+        width: 90%;
+        font-size: 0.9em;
+    }
+        
+    /* Adjust buttons for mobile */
+    .bookSum, .followingMore {
+        width: 80px;
+        font-size: 0.9em; 
+    }
+        
+    /* Image adjustments */
+    .profilepic, .followingPic, .followingPicSm {
+        width: 20%; 
+    }
+        
+    /* Footer adjustments */
+    footer {
+        font-size: 0.8em;
+        padding: 1em; 
+    }
+
+    #sitemap {
+        width: 100%; 
+    }
+}
