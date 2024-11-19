@@ -61,8 +61,11 @@ header a:hover {
 
 /* Heading 1 style - add padding and font size */
 h1 {
-    padding-left: 20px;; 
+    text-align: center;
     font-size: 3em; 
+    padding-right: 240px;		 
+	padding-top: 5px;
+	padding-bottom: 5px; 
 }
 
 /* Color for various header and title elements */
@@ -372,8 +375,8 @@ footer a {
         
     /* Resize titles and headings */
     h1 {    
+        text-align: center;
         font-size: 2em;
-        padding-left: 10px; 
     }
 
     /*adjusting size of h2 and h3 for mobile*/
