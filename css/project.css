@@ -21,7 +21,7 @@ body {
     width: 80%;
 	min-width: 900px;
 	max-width: 1280px;
-	box-shadow: 3px 3px 3px #34FEC1;
+	box-shadow: 3px 3px 21px 2px #34FEC1;
 	padding: 0; 
 }  
 
@@ -66,6 +66,11 @@ h1 {
     padding-right: 240px;		 
 	padding-top: 5px;
 	padding-bottom: 5px; 
+    padding-left: 10px;
+}
+
+header h1 {
+    padding-left: 0px;
 }
 
 /* Color for various header and title elements */
@@ -100,6 +105,7 @@ nav {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 200px; 
+;
 }
 
 /* Remove underline from links in navigation */
@@ -319,7 +325,7 @@ footer a {
 
 
 /*adjusting website for vertical mobile users*/
-@media (min-width: 414px) and (max-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)  {
+@media (min-width: 414px) and (max-width: 896px) and (orientation: portrait) {
 
         
     /* Adjust wrapper width to fit smaller screens */
@@ -448,7 +454,7 @@ footer a {
 
     /*keeps sitemap in view*/
     #sitemap {
-        width: 100%; 
+        width: 100%;
     }
 }
 
