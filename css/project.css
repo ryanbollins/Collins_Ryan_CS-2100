@@ -327,7 +327,101 @@ footer a {
 
 
 /*adjusting website for mobile users*/
-@media all and (max-width: 828px) {
+@media all and (max-width: 828px) and (orientation: landscape)  {
+
+    /* Adjust wrapper width to fit smaller screens */
+    #wrapper {
+        width: 90%;
+        min-width: auto;
+        max-width: 100%;
+        padding: 0 10px; 
+    }
+
+
+    /* Stack navigation and main content vertically */
+    nav { 
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.2em; 
+    }
+    
+    /*removes box shadow for mobile users*/
+    main {
+        margin-left: 0;
+        padding: 10px;
+        min-height: auto;
+        box-shadow: none; 
+    }
+        
+    /* Adjust gallery item size and alignment */
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 10px; 
+    }
+    /*adds padding of gallery for mobile users*/
+    .gallery {
+        width: 100%;
+        margin: 0;
+        padding: 10px; 
+    }
+        
+    /* Resize thumbnails for smaller screens */
+    .thumbnail {
+        width: 80px; 
+    }
+        
+    /* Resize titles and headings */
+    h1 {    
+        text-align: center;
+        font-size: 2em;
+    }
+
+    /*adjusting size of h2 and h3 for mobile*/
+    h2, h3 {
+        font-size: 1.5em;
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
+        
+    /* Adjust details and book sections */
+    .details {
+        padding: 10px;
+        margin-top: 10px; 
+    }
+
+    /*adjusting size of book images for mobile users*/
+    .bookP {
+        width: 90%;
+        font-size: 0.9em;
+    }
+        
+    /* Adjust buttons for mobile */
+    .bookSum, .followingMore {
+        width: 80px;
+        font-size: 0.9em; 
+    }
+        
+    /* Image adjustments */
+    .profilepic, .followingPic, .followingPicSm {
+        width: 20%; 
+    }
+        
+    /* Footer adjustments */
+    footer {
+        font-size: 0.8em;
+        padding: 1em; 
+    }
+
+    #sitemap {
+        width: 100%; 
+    }
+}
+
+/*adjusting website for mobile users*/
+@media all and (max-width: 828px) and (orientation: portrait)  {
 
     /* Adjust wrapper width to fit smaller screens */
     #wrapper {
