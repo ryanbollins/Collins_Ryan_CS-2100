@@ -9,5 +9,6 @@ Your stuff contains your bookmarks and reviewed books. Reviewed books will have 
 For you contains a list of accounts you follow and recommened books for you. You can see accounts you follow by clicking following and you can click the individual names of accounts to see their profile specifically. 
 New/Trending contains books that are up and coming and books that people are talking about. 
 Profile contains your profile picture, username, bio, your reviews, and who you follow. 
+Product page contains a store to buy a list of merchandise from BookSmart
 Footer contains sitemap, privacy policy, and the copyright of the website. 
 Every page contains a link to navigate the site effectively. 
