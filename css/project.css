@@ -248,6 +248,10 @@ details summary {
     
 }
 
+#form-container { color: #34FEC1;
+
+}
+
 /* Style for table cells in flow - set border and padding */
 .flow td { 
     border: 1px solid #02b881;

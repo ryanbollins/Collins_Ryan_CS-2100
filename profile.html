@@ -26,9 +26,32 @@ bio so other people can see what your bookish likes and interests.">
   </nav>
   <main>
     <img src="media/profilePic.jpg" alt="profile picture" class="profilepic">
-    <h1>Username</h1>
-    <p>Description of who you are. What are you into?</p>
-
+    
+    <div id="display-container" class="hidden">
+    <h1 id="display-name"></h1>
+    <h2> Bio </h2>
+    <h2 id="display-bio"></h2>
+  </div>
+   <div id="form-container">
+    <form id="editable-form">
+      <label>
+        Enter Name:
+        <input type="text" id="name-input" placeholder="Enter your name">
+      </label>
+      <br>
+      <label>
+        Enter Bio:
+        <input type="bio" id="bio-input" placeholder="Enter your bio">
+      </label>
+      <br>
+      <button type="button" id="submit-btn">Submit</button>
+    </form>
+    <div id="display-container" class="hidden">
+      <p id="display-name"></p>
+      <p id="display-bio"></p>
+      
+    </div>
+  
     
     <h2><a href="reviews.html">Reviews</a></h2>
         
