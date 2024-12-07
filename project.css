@@ -30,6 +30,8 @@ body {
     color:#34FEC1; 
 } 
 
+
+
 /* Header style - set background color, no-repeat background, padding around header content */
 header { 
     background-color: #112247; 
@@ -789,4 +791,13 @@ footer a {
     #sitemap {
         width: 100%; 
     }
+}
+
+@media (min-width: 1024px) {
+    header {
+        background-image: url(media/logo.png );
+       
+    }
+
+    
 }
